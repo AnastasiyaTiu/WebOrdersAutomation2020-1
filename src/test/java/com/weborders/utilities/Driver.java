@@ -38,7 +38,7 @@ public class Driver {
                     break;
                 case "chromeheadless":
                     //to run chrome without interface (headless mode)
-                    WebDriverManager.chromedriver().version("79").setup();
+                    WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.setHeadless(true);
                     driverPool.set(new ChromeDriver(options));
